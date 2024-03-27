@@ -48,7 +48,8 @@ export default function RotatingCube({
     <>
       <mesh ref={meshRef} position={[0, 0, 0]}>
         <boxGeometry args={[2, 2, 2]} />
-        <meshStandardMaterial transparent={true} color={color} />
+        {/* <meshStandardMaterial transparent={true} color={color} /> */}
+        <meshPhysicalMaterial metalness={0.2} roughness={0.3} transmission={1} thickness={0.5} color={color} />
         {/* <axesHelper position={[0, 0, 0]} args={[5]} /> */}
       </mesh>
     </>
