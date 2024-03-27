@@ -2,29 +2,52 @@ import { useFrame } from "@react-three/fiber";
 import React, { useRef, useState } from "react";
 import * as THREE from "three";
 
-export default function AnimatedSphere() {
+export default function AnimatedSphere({ setSpherePosition, isAnimating }) {
   const meshRef = useRef();
   let axis = new THREE.Vector3(0.1, 0.5, 0).normalize();
   const [angle, setAngle] = useState(0);
 
+  const adjustmentX = 3.0;
+  const adjustmentY = 0.50;
+
+  const orbitCenter = { x: 0, y: 0, z: 0 };
+  const orbitRadius = 0.7;
+  const ellipseRadiusX = 5.2 + orbitRadius + adjustmentX;
+  const ellipseRadiusY = 1.7997 + orbitRadius - adjustmentY;
+
+  const tiltAngle = THREE.MathUtils.degToRad(25);
   useFrame(() => {
-    if (meshRef.current) {
+    if (meshRef.current && isAnimating) {
       setAngle((prev) => prev + 0.01);
-      const x = 2 * Math.sin(angle);
-      const z = 3 * Math.cos(angle);
-      const y = 3 * Math.cos(angle);
-      meshRef.current.rotateOnAxis(axis, 0.01);
-      meshRef.current.position.set(x, y, z);
+
+      const x = orbitCenter.x + ellipseRadiusX * Math.sin(angle);
+      const z = orbitCenter.z + ellipseRadiusY * Math.cos(angle);
+      const y = 0;
+      //   meshRef.current.rotateOnAxis(axis, 0.01);
+      const cosTilt = Math.cos(tiltAngle);
+      const sinTilt = Math.sin(tiltAngle);
+      const tiltedX = x * cosTilt - y * sinTilt;
+      const tiltedY = x * sinTilt + y * cosTilt;
+
+      meshRef.current.position.set(tiltedX, tiltedY, z);
+      const position = meshRef.current.position;
+      setSpherePosition({ x: position.x, y: position.y, z: position.z });
     }
   });
 
   const color = "blue";
 
   return (
-    <mesh ref={meshRef} position={[1, 1, 0]}>
-      {/* <axesHelper args={[5]} /> */}
-      <sphereGeometry args={[1, 32, 32]} />
-      <meshStandardMaterial transparent={true} color={color} />
-    </mesh>
+    <>
+      <mesh position={[orbitCenter.x, orbitCenter.y, orbitCenter.z]}>
+        <sphereGeometry args={[1, 16, 16]} />
+        <meshStandardMaterial color="red" />
+      </mesh>
+      <mesh ref={meshRef}>
+        <sphereGeometry args={[1, 32, 32]} />
+        <meshStandardMaterial transparent={true} color={color} />
+        {/* <axesHelper args={[5]} /> */}
+      </mesh>
+    </>
   );
 }
