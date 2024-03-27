@@ -22,20 +22,23 @@ export default function Scene() {
   }
 
   return (
-    <Canvas camera={{ position: [newX, y, newZ], fov: 45 }}>
+    <Canvas
+      camera={{ position: [newX, y, newZ], fov: 45 }}
+      style={{ background: "lightblue" }}
+    >
       <ambientLight intensity={0.5} />
       <directionalLight position={[-2, 5, 2]} intensity={4} />
-      <RotatingCube
+      {/* <RotatingCube
         spherePosition={spherePosition}
         isAnimating={isAnimating}
         toggleAnimation={toggleAnimation}
         cubeSpeed={cubeSpeed}
-      />
-      <AnimatedSphere
+      /> */}
+      {/* <AnimatedSphere
         setSpherePosition={setSpherePosition}
         isAnimating={isAnimating}
         cubeSpeed={cubeSpeed}
-      />
+      /> */}
     </Canvas>
   );
 }
