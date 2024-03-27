@@ -24,7 +24,7 @@ export default function Scene() {
   return (
     <Canvas camera={{ position: [newX, y, newZ], fov: 45 }}>
       <ambientLight intensity={0.5} />
-      <directionalLight position={[-2, 5, 2]} intensity={1} />
+      <directionalLight position={[-2, 5, 2]} intensity={4} />
       <RotatingCube
         spherePosition={spherePosition}
         isAnimating={isAnimating}

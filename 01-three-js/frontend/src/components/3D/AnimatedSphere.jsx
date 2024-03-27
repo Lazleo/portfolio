@@ -44,7 +44,7 @@ export default function AnimatedSphere({
   return (
     <>
       <mesh position={[orbitCenter.x, orbitCenter.y, orbitCenter.z]}>
-        <sphereGeometry args={[1, 16, 16]} />
+        <sphereGeometry args={[0.3, 16, 16]} />
         <meshStandardMaterial color="red" />
       </mesh>
       <mesh ref={meshRef}>
