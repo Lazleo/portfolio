@@ -3,10 +3,10 @@ import { Canvas } from "@react-three/fiber";
 import RotatingCube from "./RotatingCube";
 import AnimatedSphere from "./AnimatedSphere";
 
-
 export default function Scene() {
   const [spherePosition, setSpherePosition] = useState({ x: 0, y: 0, z: 0 });
   const [isAnimating, setIsAnimating] = useState(true);
+  const [cubeSpeed, setCubeSpeed] = useState(0.01);
 
   const [x, y, z] = [10, 5, 10];
 
@@ -29,10 +29,12 @@ export default function Scene() {
         spherePosition={spherePosition}
         isAnimating={isAnimating}
         toggleAnimation={toggleAnimation}
+        cubeSpeed={cubeSpeed}
       />
       <AnimatedSphere
         setSpherePosition={setSpherePosition}
         isAnimating={isAnimating}
+        cubeSpeed={cubeSpeed}
       />
     </Canvas>
   );

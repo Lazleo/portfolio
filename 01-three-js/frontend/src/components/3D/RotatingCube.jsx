@@ -5,6 +5,7 @@ export default function RotatingCube({
   spherePosition,
   isAnimating,
   toggleAnimation,
+  cubeSpeed,
 }) {
   const meshRef = useRef();
   const [color, setColor] = useState("rgb(0, 150, 175)");
@@ -19,7 +20,7 @@ export default function RotatingCube({
 
   useFrame(() => {
     if (meshRef.current && isAnimating) {
-      meshRef.current.rotation.y += 0.01;
+      meshRef.current.rotation.y += cubeSpeed;
 
       const distance = meshRef.current.position.distanceTo(spherePosition);
       if (distance <= 2) {
@@ -32,7 +33,7 @@ export default function RotatingCube({
     if (colorChangeCount <= 2) {
       setColorChangeCount((prevCount) => prevCount + 1);
     } else {
-    //   toggleAnimation();
+      //   toggleAnimation();
     }
   }, [color]);
 
