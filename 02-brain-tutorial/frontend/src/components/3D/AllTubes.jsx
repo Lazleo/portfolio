@@ -24,10 +24,20 @@ for (let i = 0; i < 100; i++) {
   curves.push(new THREE.CatmullRomCurve3(points));
 }
 
+let brainCurves = [];  
+
+PATHS.forEach((path) => {
+    let points = [];
+    for (let i = 0; i < path.length; i+=3) {
+        points.push(new THREE.Vector3(path[i], path[i+1], path[i+2]));
+    }
+    brainCurves.push(new THREE.CatmullRomCurve3(points));
+});
+
 export default function AllTubes() {
   return (
     <>
-      {curves.map((curve, i) => (
+      {brainCurves.map((curve, i) => (
         <Tube key={i} curve={curve} />
       ))}
     </>
