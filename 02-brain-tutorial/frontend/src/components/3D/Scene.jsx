@@ -4,7 +4,7 @@ import AllTubes from "./AllTubes";
 
 export default function Scene() {
   return (
-    <Canvas>
+    <Canvas camera={[0, 0, 0]}>
       <color attach="background" args={["black"]} />
       <ambientLight />
       <pointLight position={[10, 10, 10]} />
