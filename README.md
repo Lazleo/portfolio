@@ -1,20 +1,44 @@
 # fancy-portfolio
 A haphazard collection of ideas
 
-Ball&Cube
-Further ado:
+# Idea: DnD Initiative App
+Description: dynamic mobile app + tool for tabletop RPG in D&D 5e
+Features: 
+    add PC and NPC stats (str, dex, etc.) + AC + movement
+    add damage in each round (victim: damage, attacker)
+    calculate initiative, curr. HP and death saves
+    modify status (paralyzed, grappled, poisoned  etc.) 
+        API: https://5e-bits.github.io/docs/
+Goal: mobile-first design + dnd 5e API + custom database
+Tools: react + tailwind css + prisma
 
-// ICECUBE:
-    // add frostglass tranparency and blur to the cube
-    // add rounded edges to the cube
+# Idea: Totem Webpage
+Description: interactive artist studio web app showcasing a kinetic light installation
+Features: 
+    interactive 3D model of the installation
+    parallax scrolling
+    media gallery
+    mobile app version
+Goal: web app design + 3D browser rendering
+Tools: react + tailwind css + r3f
 
-// CANNONBALL:
-    // make the sphere metalic (gold)
-    // add roughness to the sphere
+# Idea: Worthwhile
+Description: eco-friendly financial tracker app
+Features: 
+    add new item
+    calculate possession data
+    calculate user analytics
+    store user data
+Goal: mobile-first design + front end functionality
+Tools: react + typescript + shadcn/ui + tailwind css
 
-// change the color of the background on collision
-    // link div to the canvas ? or add some background element inside canvas
-    // negative of cube (green glass cube - pastel pink background)
-
-// add user interactivity - mouse click, drag, position
-    // ui: sphere restarts its orbit from the new dragged position, on a new orbit with the same properties of axis length and tilt angle
+# Idea: Portfolio
+Description: virtual portfolio
+Features: 
+    users can upvote / reorder content based on votes
+    preview projects → redirect to site in new tab
+    about me + contact + linkedin, github, etc.
+    download cv
+    mobile app version
+Goal: dynamic web page design + contact (user, email, upvote)
+Tools: react + tailwind css + hostinger
