@@ -1,11 +1,11 @@
 import Hero from "../components/Hero";
-import ProjectsList from "../components/ProjectsList";
+import RobotPlayground from "../components/RobotPlayground";
 
 export default function Home() {
   return (
     <div className="flex flex-col">
-        <Hero />
-        <ProjectsList />
+      <Hero />
+      <RobotPlayground />
     </div>
-  )
+  );
 }
