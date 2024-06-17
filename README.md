@@ -1,5 +1,13 @@
 # fancy-portfolio
-A haphazard collection of ideas
+Description: virtual portfolio
+Features: 
+    users can upvote / reorder content based on votes
+    preview projects → redirect to site in new tab
+    about me + contact + linkedin, github, etc.
+    download cv
+    mobile app version
+Goal: dynamic web page design + contact (user, email, upvote)
+Tools: react + tailwind css + hostinger
 
 # Idea: DnD Initiative App
 Description: dynamic mobile app + tool for tabletop RPG in D&D 5e
@@ -32,13 +40,12 @@ Features:
 Goal: mobile-first design + front end functionality
 Tools: react + typescript + shadcn/ui + tailwind css
 
-# Idea: Portfolio
-Description: virtual portfolio
+# Idea: Cinemania
+Description: movie ticket vendor webshop
 Features: 
-    users can upvote / reorder content based on votes
-    preview projects → redirect to site in new tab
-    about me + contact + linkedin, github, etc.
-    download cv
-    mobile app version
-Goal: dynamic web page design + contact (user, email, upvote)
-Tools: react + tailwind css + hostinger
+    admin page
+    user login
+    select diff. types of tickets
+    search movies by multiple categories
+Goal: cart functionalities
+Tools: react + tailwind css + firebase
