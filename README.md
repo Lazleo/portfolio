@@ -1,4 +1,4 @@
-# Idea: fancy-portfolio
+# Idea: Personal portfolio
 Description: virtual portfolio
 Features: 
     users can upvote / reorder content based on votes
