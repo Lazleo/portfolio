@@ -1,3 +1,6 @@
+# Concept: Personal motif
+Patterns, Fractals, Mathematical Tiling and Tessellation
+
 # Idea: Personal portfolio
 Description: virtual portfolio
 Features: 
@@ -9,7 +12,7 @@ Features:
 Goal: dynamic web page design + contact (user, email, upvote)
 Tools: react + tailwind css + hostinger
 
-# Idea: DnD Initiative App
+# Content: DnD Initiative App
 Description: dynamic mobile app + tool for tabletop RPG in D&D 5e
 Features: 
     add PC and NPC stats (str, dex, etc.) + AC + movement
@@ -20,7 +23,7 @@ Features:
 Goal: mobile-first design + dnd 5e API + custom database
 Tools: react + tailwind css + prisma
 
-# Idea: Totem Webpage
+# Content: Totem Webpage
 Description: interactive artist studio web app showcasing a kinetic light installation
 Features: 
     interactive 3D model of the installation
@@ -30,7 +33,7 @@ Features:
 Goal: web app design + 3D browser rendering
 Tools: react + tailwind css + r3f
 
-# Idea: Worthwhile
+# Content: Worthwhile
 Description: eco-friendly financial tracker app
 Features: 
     add new item
@@ -40,7 +43,7 @@ Features:
 Goal: mobile-first design + front end functionality
 Tools: react + typescript + shadcn/ui + tailwind css
 
-# Idea: Cinemania
+# Content: Cinemania
 Description: movie ticket vendor webshop
 Features: 
     admin page
