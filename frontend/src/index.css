@@ -8,7 +8,7 @@
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url(/assets/components/fonts/Anona/AnonaSemibold.otf) format('otf');
+    src: url(/fonts/Anona/AnonaSemibold.otf) format('otf');
   }
 }
 
@@ -18,6 +18,6 @@
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url(/assets/components/fonts/Puritan/PuritanRegular.ttf) format('ttf');
+    src: url(/fonts/Puritan/PuritanRegular.ttf) format('ttf');
   }
 }
