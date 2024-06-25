@@ -1,8 +1,8 @@
 import Lines from "../assets/svg/Lines";
-import Contact from "../components/sections/Contact";
-import Experience from "../components/sections/Experience";
-import Hero from "../components/sections/Hero";
-import Selected from "../components/sections/Selected";
+import Contact from "./sections/Contact";
+import Experience from "./sections/Experience";
+import Hero from "./sections/Hero";
+import Selected from "./sections/Selected";
 
 export default function Home() {
   return (

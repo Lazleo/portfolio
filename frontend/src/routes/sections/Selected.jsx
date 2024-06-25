@@ -1,8 +1,7 @@
-import ProjectCard from "../Selected/ProjectCard";
+import ProjectCard from "../../components/Selected/ProjectCard";
 
 export default function Selected() {
-
-  const works = [1, 2, 3, 4]
+  const works = [1, 2, 3, 4];
 
   return (
     <div className="flex flex-col items-center">
