@@ -3,7 +3,7 @@ import Avatar from "../Hero/Avatar";
 
 export default function Hero() {
   return (
-    <div className="flex h-[80vh] justify-center mt-[10vh]">
+    <div className="relative flex h-[80vh] justify-center mt-[10vh]">
         <HeroCard />
         <Avatar />
     </div>
