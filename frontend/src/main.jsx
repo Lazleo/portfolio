@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import "./index.css";
 import MainLayout from "./layouts/MainLayout";
-import ErrorElement from "./routes/ErrorElement";
+import UnderConstruction from "./routes/error/UnderConstruction";
 import Home from "./routes/Home";
 
 
@@ -12,7 +12,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <MainLayout />,
-    errorElement: <ErrorElement />,
+    errorElement: <UnderConstruction />,
     children: [
       {
         path: "",
@@ -20,7 +20,6 @@ const router = createBrowserRouter([
       },
     ],
   },
-  
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
