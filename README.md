@@ -35,7 +35,7 @@ Features:
     AI interaction with some weather API (???)
     prepare data for RaspberryPi / Arduino
     mobile app version
-Tools: react + tailwind css + r3f + ## python
+Tools: react + tailwind css + r3f + python
 
 # Content: Worthwhile
 Description: eco-friendly financial tracker app
@@ -71,4 +71,4 @@ Features:
     generate new pattern based on current weather and date
        Random Map Generator: https://donjon.bin.sh/code/dungeon/
     scroll animation
-Tools: react + tailwind css + ## prisma
+Tools: react + tailwind css + pearl
