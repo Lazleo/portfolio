@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'anona';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(/fonts/Anona/AnonaSemibold.otf) format('otf');
+  }
+}
+
+@layer base {
+  @font-face {
+    font-family: 'puritan';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(/fonts/Puritan/PuritanRegular.ttf) format('ttf');
+  }
+}

@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 
 export default function MainLayout() {
   return (
-    <div className=" bg-gradient-to-b from-indigo-950 to-teal-600 py-4 px-12">
+    <div className="bg-gradient-to-b from-darkBg via-midBg to-lightBg py-4 font-text text-neutral">
       <Header />
       <Outlet />
       <Footer />
