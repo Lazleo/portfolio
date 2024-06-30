@@ -13,7 +13,9 @@ export default function Contact() {
       <Splash />
       <div className="relative w-fit h-fit rounded-3xl flex justify-center items-center pt-8 pb-16 px-4">
         <div className="font-primary flex flex-col items-center mx-8 mt-16 gap-4">
-          <div className="text-primary text-7xl tracking-widest">contact info</div>
+          <div className="text-primary text-7xl tracking-widest">
+            contact info
+          </div>
           <ul className="text-3xl mb-8">
             <li className="mt-6 flex justify-start items-center gap-4">
               <PhoneIcon />
@@ -29,7 +31,7 @@ export default function Contact() {
             </li>
             <li className="mt-6 flex justify-start items-center gap-4">
               <GithubIcon />
-              <span>github/Lazleo</span>
+              <a href="">github/Lazleo</a>
             </li>
             <li className="mt-6 flex justify-start items-center gap-4">
               <WebIcon />
@@ -37,8 +39,7 @@ export default function Contact() {
             </li>
           </ul>
           <SecondaryButton text={"code"} size={"4xl"} />
-          <SecondaryButton text={"resume"} size={"4xl"} />
-          <PrimaryButton text={"contact"} size={"4xl"} />
+          <PrimaryButton text={"resume"} size={"4xl"} />
         </div>
       </div>
     </div>

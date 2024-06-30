@@ -1,5 +1,5 @@
 import Lines from "../assets/svg/Lines";
-import MotionTest from "../components/animations/MotionTest";
+// import MotionTest from "../components/animations/MotionTest";
 import Contact from "./sections/Contact";
 import Experience from "./sections/Experience";
 import Hero from "./sections/Hero";
@@ -11,7 +11,7 @@ export default function Home() {
       <div className="relative z-20">
         <Hero />
         <Experience />
-        <MotionTest />
+        {/* <MotionTest /> */}
         <Selected />
         <Contact />
       </div>

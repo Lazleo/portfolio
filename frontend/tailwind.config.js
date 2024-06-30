@@ -5,6 +5,7 @@ export default {
     extend: {
       boxShadow: {
         glow: "0 0 40px 15px rgba(91, 244, 189, 0.8)",
+        "glow-sm": "0 0 20px 5px rgba(91, 244, 189, 0.8)",
       },
       colors: {
         primary: "#5BF4BD",

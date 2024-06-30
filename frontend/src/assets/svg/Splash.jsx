@@ -1,6 +1,6 @@
 export default function Splash() {
   return (
-    <div className="absolute z-0 -top-60">
+    <div className="absolute z-0 -top-60 blur-sm">
       <svg
         width="2500"
         height="1200"
