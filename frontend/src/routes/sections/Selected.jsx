@@ -1,3 +1,8 @@
+import BattleScoreIcon from "../../assets/svg/BattleScoreIcon";
+import WcolIcon from "../../assets/svg/WcolIcon";
+import TotemIcon from "../../assets/svg/TotemIcon"
+import CineIcon from "../../assets/svg/CineIcon"
+import PomoIcon from "../../assets/svg/PomoIcon";
 import ProjectCard from "../../components/Selected/ProjectCard";
 // TODO: automate mapping odd and pair cards
 
@@ -10,6 +15,7 @@ export default function Selected() {
         body: "small-scale personal investment and maintenance assistant",
       },
       isOdd: true,
+      icon: <WcolIcon />,
     },
     {
       title: "battleScore",
@@ -18,6 +24,7 @@ export default function Selected() {
         body: "combat phase helper tracking initiative order, hp, and other stats or effects",
       },
       isOdd: false,
+      icon: <BattleScoreIcon />,
     },
     {
       title: "TOTEM",
@@ -26,6 +33,7 @@ export default function Selected() {
         body: "portfolio presenting an interactive tribute to the only work of an art installation duo",
       },
       isOdd: true,
+      icon: <TotemIcon />,
     },
     {
       title: "CineMania",
@@ -34,6 +42,7 @@ export default function Selected() {
         body: "team project within Progmatic Academy FS '23-'24",
       },
       isOdd: false,
+      icon: <CineIcon />
     },
     {
       title: "PoMoLeGo",
@@ -42,6 +51,7 @@ export default function Selected() {
         body: "build post-modernist facades with random building blocks",
       },
       isOdd: true,
+      icon: <PomoIcon />
     },
   ];
 

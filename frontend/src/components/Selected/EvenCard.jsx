@@ -26,7 +26,9 @@ export default function EvenCard(props) {
           <PrimaryButton text={`let's collaborate!`} size={"lg"} />
         </div>
       </div>
-      <div className="w-[350px] border-2 border-dashed"></div>
+      <div className="w-[350px] border-2 border-dashed">
+        {card.icon}
+      </div>
     </div>
   );
 }
