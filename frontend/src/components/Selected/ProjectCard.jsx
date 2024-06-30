@@ -1,30 +1,8 @@
-import PrimaryButton from "../PrimaryButton";
-import SecondaryButton from "../SecondaryButton";
+import EvenCard from "./EvenCard";
+import OddCard from "./OddCard";
 
 /* eslint-disable react/prop-types */
 export default function ProjectCard(props) {
   const { card } = props;
-  return (
-    <div className="border-2 border-gray-400 w-fit h-fit rounded-3xl my-12 flex px-12 pt-8 pb-16 bg-lightBg/20 backdrop-blur-md">
-      <div className="w-[200px] border-2 border-dashed"></div>
-      <div className="flex flex-col justify-center items-center font-primary gap-2 ml-16">
-        <div className="w-[350px] flex flex-col justify-center items-center">
-          <div className="text-4xl font-extrabold tracking-wider">
-            {card.title}
-          </div>
-          <div className="text-lg text-center mt-2">{card.description.header}</div>
-          <div className="text-center mt-4 px-6 w-[100%] font-text">
-            {card.description.body}
-          </div>
-        </div>
-        <div className="w-[300px] flex flex-col gap-2 mt-6">
-          <div className="flex gap-2">
-            <SecondaryButton text={`webpage`} size={"lg"} />
-            <SecondaryButton text={`code`} size={"lg"} />
-          </div>
-          <PrimaryButton text={`let's collaborate!`} size={"lg"} />
-        </div>
-      </div>
-    </div>
-  );
+  return <>{card.isOdd ? <OddCard card={card} /> : <EvenCard card={card} />}</>;
 }
