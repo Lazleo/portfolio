@@ -1,6 +1,6 @@
 export default function BattleScoreIcon() {
   return (
-    <div>
+    <div className="mt-[50px]">
       <svg
         width="292"
         height="225"

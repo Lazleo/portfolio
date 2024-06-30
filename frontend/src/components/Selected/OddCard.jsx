@@ -1,3 +1,4 @@
+import Glow from "../../assets/svg/Glow";
 import PrimaryButton from "../PrimaryButton";
 import SecondaryButton from "../SecondaryButton";
 
@@ -6,7 +7,12 @@ export default function OddCard(props) {
   const { card } = props;
   return (
     <div className="ml-[550px] border-2 border-gray-400 w-fit h-fit rounded-3xl my-12 flex px-12 pt-8 pb-16 bg-lightBg/20 backdrop-blur-md">
-      <div className="w-[350px] border-2 border-dashed">{card.icon}</div>
+      <div className="w-[350px] flex justify-center relative">
+        <div className="absolute">{card.icon}</div>
+        <div className="mt-[50px]">
+          <Glow />
+        </div>
+      </div>
       <div className="flex flex-col justify-center items-center font-primary gap-2 ml-16">
         <div className="w-[350px] flex flex-col justify-center items-center">
           <div className="text-4xl font-extrabold tracking-wider">

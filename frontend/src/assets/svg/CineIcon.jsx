@@ -1,6 +1,6 @@
 export default function CineIcon() {
   return (
-    <div>
+    <div className="mt-[30px]">
       <svg
         width="177"
         height="289"

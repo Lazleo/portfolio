@@ -1,3 +1,4 @@
+import Glow from "../../assets/svg/Glow";
 import PrimaryButton from "../PrimaryButton";
 import SecondaryButton from "../SecondaryButton";
 
@@ -26,8 +27,11 @@ export default function EvenCard(props) {
           <PrimaryButton text={`let's collaborate!`} size={"lg"} />
         </div>
       </div>
-      <div className="w-[350px] border-2 border-dashed">
-        {card.icon}
+      <div className="w-[350px] flex justify-center relative">
+        <div className="absolute">{card.icon}</div>
+        <div className="mt-[50px]">
+          <Glow />
+        </div>
       </div>
     </div>
   );

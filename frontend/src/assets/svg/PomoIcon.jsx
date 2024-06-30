@@ -1,10 +1,10 @@
 export default function PomoIcon() {
   return (
-    <div>
+    <div className="mt-[60px]">
       <svg
-        width="194"
-        height="195"
-        viewBox="0 0 194 195"
+        width="250"
+        height="250"
+        viewBox="0 -10 194 195"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >

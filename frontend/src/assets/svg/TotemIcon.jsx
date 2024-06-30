@@ -1,9 +1,9 @@
 export default function TotemIcon() {
   return (
-    <div>
+    <div className="mt-[50px]">
       <svg
         width="179"
-        height="320"
+        height="280"
         viewBox="0 0 179 320"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
