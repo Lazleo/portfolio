@@ -35,6 +35,14 @@ export default function Selected() {
       },
       isOdd: false,
     },
+    {
+      title: "PoMoLeGo",
+      description: {
+        header: "architectural facade pattern generator",
+        body: "build post-modernist facades with random building blocks",
+      },
+      isOdd: true,
+    },
   ];
 
   return (
