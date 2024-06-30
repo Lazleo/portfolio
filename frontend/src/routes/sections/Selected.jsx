@@ -56,7 +56,7 @@ export default function Selected() {
   ];
 
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center mt-[300px]">
       {works.map((work) => {
         return <ProjectCard card={work} key={work} />;
       })}
