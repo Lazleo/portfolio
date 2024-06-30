@@ -3,8 +3,8 @@ export default function Lines() {
     <div className="absolute top-0 z-10 overflow-clip w-screen">
       <svg
         width="1600"
-        height="3200"
-        viewBox="0 0 1600 6400"
+        height="9200"
+        viewBox="0 0 1600 8800"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
