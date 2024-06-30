@@ -14,7 +14,7 @@ export default function HeroCard() {
         i like blobs and grids, glassmorphism and interactive design with a
         background in engineering and architecture
       </div>
-      <PrimaryButton text={`let's collaborate!`} size={'4xl'} />
+      <PrimaryButton text={`let's collaborate!`} size={"4xl"} />
     </div>
   );
 }
