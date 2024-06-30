@@ -3,8 +3,8 @@ import ReactDOM from "react-dom/client";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import "./index.css";
 import MainLayout from "./layouts/MainLayout";
-import UnderConstruction from "./routes/error/UnderConstruction";
 import Home from "./routes/Home";
+import NotFound from "./routes/error/NotFound";
 
 
 
@@ -12,7 +12,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <MainLayout />,
-    errorElement: <UnderConstruction />,
+    errorElement: <NotFound />,
     children: [
       {
         path: "",
