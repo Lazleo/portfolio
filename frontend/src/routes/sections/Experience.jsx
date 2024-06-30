@@ -29,7 +29,7 @@ export default function Experience() {
     },
   ];
   return (
-    <div className="flex flex-col justify-center relative">
+    <div id="experience" className="flex flex-col justify-center relative">
       <div className="w-screen h-[300px] bg-lightBg">
         <Banner />
       </div>

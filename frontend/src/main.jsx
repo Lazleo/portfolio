@@ -3,8 +3,8 @@ import ReactDOM from "react-dom/client";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import "./index.css";
 import MainLayout from "./layouts/MainLayout";
-import ErrorElement from "./routes/ErrorElement";
 import Home from "./routes/Home";
+import NotFound from "./routes/error/NotFound";
 
 
 
@@ -12,7 +12,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <MainLayout />,
-    errorElement: <ErrorElement />,
+    errorElement: <NotFound />,
     children: [
       {
         path: "",
@@ -20,7 +20,6 @@ const router = createBrowserRouter([
       },
     ],
   },
-  
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
