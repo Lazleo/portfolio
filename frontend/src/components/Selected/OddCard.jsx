@@ -6,10 +6,10 @@ import SecondaryButton from "../SecondaryButton";
 export default function OddCard(props) {
   const { card } = props;
   return (
-    <div className="ml-[550px] border-2 border-gray-400 w-fit h-fit rounded-3xl my-12 flex px-12 pt-8 pb-16 bg-lightBg/20 backdrop-blur-md">
-      <div className="w-[350px] flex justify-center relative">
-        <div className="absolute">{card.icon}</div>
-        <div className="mt-[50px]">
+    <div className="overflow-clip ml-[550px] border-2 border-gray-400 w-fit h-fit rounded-3xl flex px-12 py-8 bg-lightBg/20 backdrop-blur-md">
+      <div className="w-[200px] flex justify-center relative">
+        <div className="absolute z-10 top-[20px]">{card.icon}</div>
+        <div className="absolute z-0 top-[45px]">
           <Glow />
         </div>
       </div>

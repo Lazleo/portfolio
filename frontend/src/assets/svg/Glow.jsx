@@ -2,8 +2,8 @@ export default function Glow() {
   return (
     <div>
       <svg
-        width="508"
-        height="377"
+        width="408"
+        height="277"
         viewBox="0 0 508 377"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"

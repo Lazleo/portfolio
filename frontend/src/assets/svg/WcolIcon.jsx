@@ -3,7 +3,7 @@ export default function WcolIcon() {
     <div>
       <svg
         width="251"
-        height="354"
+        height="254"
         viewBox="0 0 251 354"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
